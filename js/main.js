@@ -8,7 +8,11 @@ num.value=1;
 function addNum(){
     addSum=Number(result.textContent)+Number(num.value);
     result.textContent=addSum;
-    addSum<0? result.style.color="red":result.style.color="black"
+    if(addSum<0){
+        result.style.color="red";
+    }else{
+        result.style.color="black";
+    }
 }
 function minusNum(){
     minusSum=Number(result.textContent)-Number(num.value);
